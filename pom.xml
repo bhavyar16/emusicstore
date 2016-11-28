@@ -7,6 +7,9 @@
     <groupId>com.mywebsite</groupId>
     <artifactId>emusicstore</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+    <tomcat.version>8.0.28</tomcat.version>
+  </properties>
 
     <dependencies>
         <dependency>
@@ -32,5 +35,26 @@
             <artifactId>spring-webmvc</artifactId>
             <version>3.1.1.RELEASE</version>
         </dependency>
+
+        <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+        <version>${tomcat.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-jasper</artifactId>
+        <version>${tomcat.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-jasper-el</artifactId>
+        <version>${tomcat.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-jsp-api</artifactId>
+        <version>${tomcat.version}</version>
+    </dependency>
     </dependencies>
 </project>
